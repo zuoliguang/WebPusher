@@ -24,7 +24,7 @@
         if [[ -e $original ]]; then   
             scp -r $original root@$ip:$path   
         else   
-            echo "文件未找到....."    
+            echo "文件未找到....."    
         fi     
         echo " ${ip} 上传成功. "    
         i=$[$i + 1]   

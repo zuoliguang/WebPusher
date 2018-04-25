@@ -9,7 +9,7 @@
 4. WEBPATH 为项目在各服务器放置的路径列表，与 WEBLIST 键值相同的为一组    
 
 代码：  
-    ``
+
     SOURCEPATH=/home/wwwroot/testpusher   
     WEBLIST[0]=192.168.147.133   
     WEBPATH[0]=/home/wwwroot/webpusher1/   
@@ -23,14 +23,14 @@
         echo " ${ip} 服务器上传... "   
         if [[ -e $original ]]; then   
             scp -r $original root@$ip:$path   
-        else
+        else   
             echo "文件未找到....."    
         fi     
         echo " ${ip} 上传成功. "    
         i=$[$i + 1]   
     done   
     echo "web pusher is ok....."    
-    ``
+
 
 
 

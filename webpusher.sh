@@ -28,7 +28,7 @@ while [[ i -lt $count ]]; do
     if [[ -e $original ]]; then
         scp -r $original root@$ip:$path
     else
-        echo "文件打包失败....."
+        echo "文件未找到....."
     fi
 
     echo " ${ip} 上传成功. "    
